@@ -1,0 +1,43 @@
+<div class="host">
+    <div class="grid-x">
+        <div class="cell small-2 menu-content">
+            <menu class="menu"></menu>
+        </div>
+        <div class="cell small-10">
+            <div class="grid-x grid-padding-x grid-padding-y margin-top-3">
+                <div class="cell small-8 small-offset-1">
+                    <span class="f9 t-bold tc-2">Artículos</span>
+                </div>
+                <div class="cell small-2 align-right">
+                    <button class="btn-action btn-new f8">Nuevo</button>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x grid-padding-y margin-top-1">
+                <div class="cell small-2 small-offset-1">
+                    <span class="f8 t-bold tc-2">Filtro</span>
+                    <input type="text" class="_input-text" placeholder="Filtro">
+                </div>
+                <div class="cell small-2">
+                    <span class="f8 t-bold tc-2">Fecha inicial</span>
+                    <!--<igx-date-picker></igx-date-picker>-->
+                    <!--<igx-date-picker [value]="date"></igx-date-picker>-->
+                    <igx-date-picker></igx-date-picker>
+                </div>
+                <div class="cell small-2">
+                    <span class="f8 t-bold tc-2">Fecha final</span>
+                    <!--<igx-date-picker></igx-date-picker>-->
+                    <!--<igx-date-picker [value]="date"></igx-date-picker>-->
+                    <igx-date-picker></igx-date-picker>
+                </div>
+                <div class="cell small-2 content-btn align-right">
+                    <button class="btn-action btn-search f8">Buscar</button>
+                </div>
+            </div>
+            <div class="grid-x grid-padding-x margin-top-3">
+                <div class="cell small-offset-1 small-10">
+                    <ngx-datatable [rows]="rows" [columns]="columns" class="ngx-datatable material"></ngx-datatable>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
